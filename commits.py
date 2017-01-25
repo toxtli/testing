@@ -8,8 +8,8 @@ delta = d2 - d1
 
 print("""
 #!/bin/bash
-REPO=deprecated
-git init testing
+REPO=temporal
+git init temporal
 cd testing
 touch README.md
 git add README.md
@@ -25,7 +25,7 @@ for i in range(delta.days + 1):
 
 print("""
 
-git remote add origin git@github.com:toxtli/testing.git
+git remote add origin git@github.com:toxtli/temporal.git
 git pull origin master
 git push -u origin master
 
